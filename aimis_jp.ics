@@ -1,18 +1,18 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Lumia//Aimis JP Event Calendar//CN
+PRODID:-//Lumia//Aimis JP Event Calendar//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:あいミス 活动
+X-WR-CALNAME:Aimis (JP) — Events
 X-WR-TIMEZONE:Asia/Tokyo
 BEGIN:VEVENT
 UID:aimis-20261107-detective@lumia.local
 DTSTAMP:20261117T200000Z
 DTSTART:20261107T030000Z
 DTEND:20261120T035900Z
-SUMMARY:あいミス｜協力イベント「名探偵見参！謎を解くのは誰がために」
-DESCRIPTION:マスターレイドボス讨伐，集「証拠写真」换 SRプリシラ【ナゾを追う新米記者】\n报酬领取与召喚チケット使用期限 11/27 12:59\n来源：游戏内公告 https://adweimk.aimia.dmmgames.com/pc/information
-CATEGORIES:あいミス
+SUMMARY:Aimis | Co-op Event: The Detective Arrives! For Whose Sake the Mystery Is Solved
+DESCRIPTION:Raid boss event. Collect evidence photos to earn SR Priscilla [Rookie Reporter Chasing the Mystery].\nReward claim and gacha ticket use until Nov 27 12:59 JST.\nOfficial notice: https://adweimk.aimia.dmmgames.com/pc/information
+CATEGORIES:Aimis
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -20,9 +20,9 @@ UID:aimis-20261107-gacha@lumia.local
 DTSTAMP:20261117T200000Z
 DTSTART:20261107T030000Z
 DTEND:20261120T035900Z
-SUMMARY:あいミス｜期間限定召喚「名探偵見参！」SSRクレア
-DESCRIPTION:SSRクレア【真実見抜く慧眼の才女】pickup，ステップアップ每5步 SSR 确定（该角色 50%）\n来源：游戏内公告
-CATEGORIES:あいミス
+SUMMARY:Aimis | Limited Gacha: The Detective Arrives! SSR Claire
+DESCRIPTION:SSR Claire [Keen Eye That Sees the Truth] pickup. Step-up guarantees an SSR every 5 steps (50% chance of the featured character).\nOfficial notice: https://adweimk.aimia.dmmgames.com/pc/information
+CATEGORIES:Aimis
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -30,9 +30,9 @@ UID:aimis-20261118-ibunka@lumia.local
 DTSTAMP:20261117T200000Z
 DTSTART:20261118T030000Z
 DTEND:20261202T035900Z
-SUMMARY:あいミス｜イベント「異文化の風を感じよう　強さと優しさが導く祈り」
-DESCRIPTION:可获 SR+オリヴィエ【異教の探究者】\n官方只公布 11/18 12:00 开始，结束时间未公布，此处按惯例估 14 天（至 12/2 12:59），以游戏内公告为准\n来源：11/16 12:00 预告公告
-CATEGORIES:あいミス
+SUMMARY:Aimis | Event: Feel the Wind of Another Culture ~ A Prayer Led by Strength and Kindness
+DESCRIPTION:Earns SR+ Olivier [Seeker of Heresy].\nOfficial notice gives only the start time (Nov 18 12:00 JST). End date is unannounced; the end here is estimated at 14 days by convention, not official.\nOfficial notice: https://adweimk.aimia.dmmgames.com/pc/information
+CATEGORIES:Aimis
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -40,9 +40,9 @@ UID:aimis-20261114-seiju@lumia.local
 DTSTAMP:20261117T200000Z
 DTSTART:20261113T150000Z
 DTEND:20261130T145900Z
-SUMMARY:あいミス｜聖獣洞窟 11月シーズン 陰窟「聖骸の穢詛」ランダムモード
-DESCRIPTION:陰窟出现的「聖骸の穢詛」随机变化，各层分数倍率与往期相同\n11月シーズン分数倍率上调（1.2/1.2/1.5）官方确认保留不改，12月起恢复\n来源：11/14 00:00 公告
-CATEGORIES:あいミス
+SUMMARY:Aimis | Sacred Beast Cave - Nov Season: Dark Cave "Curse of the Holy Remains" (Random Mode)
+DESCRIPTION:Random mode changes the Holy Remains curse that appears in the Dark Cave layer each run.\nNovember season score multipliers 1.2 / 1.2 / 1.5 are kept as is (officially confirmed), reverting in December.\nOfficial notice: https://adweimk.aimia.dmmgames.com/pc/information
+CATEGORIES:Aimis
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -50,9 +50,9 @@ UID:aimis-20261111-renma@lumia.local
 DTSTAMP:20261117T200000Z
 DTSTART:20261110T150000Z
 DTEND:20261117T145900Z
-SUMMARY:あいミス｜コト 練磨クエスト 消費BP半減
-DESCRIPTION:コト生日纪念，全部コト練磨クエスト BP 减半（小数舍去）\n新追加：コト【無剣上等侍魔術師】【微睡みの太刀】\n来源：11/11 00:00 公告
-CATEGORIES:あいミス
+SUMMARY:Aimis | Koto Training Quest: Half BP Cost
+DESCRIPTION:Koto birthday celebration. All Koto training quests cost half BP (fractions rounded down).\nNewly added: Koto [Peerless Sword-Wielding Mage] and [Dozing Blade].\nOfficial notice: https://adweimk.aimia.dmmgames.com/pc/information
+CATEGORIES:Aimis
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -60,9 +60,9 @@ UID:aimis-20261113-amezaiku@lumia.local
 DTSTAMP:20261117T200000Z
 DTSTART:20261113T030000Z
 DTEND:20261120T035900Z
-SUMMARY:あいミス｜「飴細工は恋の味」报酬领取期限
-DESCRIPTION:活动已于 11/13 12:00 结束，报酬与限定エンディングシナリオ可看到 11/20 12:59\n来源：11/13 12:00 公告
-CATEGORIES:あいミス
+SUMMARY:Aimis | "Candy Craft Tastes Like Love" Reward Claim Deadline
+DESCRIPTION:Event already ended Nov 13 12:00 JST. Rewards and the limited ending scenario can be claimed until Nov 20 12:59 JST.\nOfficial notice: https://adweimk.aimia.dmmgames.com/pc/information
+CATEGORIES:Aimis
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR
