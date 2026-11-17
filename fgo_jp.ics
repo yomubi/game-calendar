@@ -1,17 +1,17 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Lumia//FGO JP Event Calendar//CN
+PRODID:-//Lumia//FGO JP Event Calendar//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:FGO JP Events
+X-WR-CALNAME:FGO (JP) — Events
 X-WR-TIMEZONE:Asia/Tokyo
 BEGIN:VEVENT
 UID:fgo-4f3b8d1dac@lumia.local
 DTSTAMP:20261117T195409Z
 DTSTART:20261030T090000Z
 DTEND:20261113T035900Z
-SUMMARY:FGO | 「FGO THE DRAMALOGUE -Cosmos in the Lostbelt-」公演纪念活动
-DESCRIPTION:Type: Campaign\nNews: https://news.fate-go.jp/2026/10/dramalogue_cp/\nSrc: fgo.wiki Mooncell
+SUMMARY:FGO | FGO THE DRAMALOGUE Stage Play Commemoration
+DESCRIPTION:Type: Campaign\nFGO THE DRAMALOGUE -Cosmos in the Lostbelt- stage play celebration campaign.\nOfficial news: https://news.fate-go.jp/2026/10/dramalogue_cp/\nSource: fgo.wiki (Mooncell)
 CATEGORIES:FGO
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -20,8 +20,8 @@ UID:fgo-f79c057150@lumia.local
 DTSTAMP:20261117T195409Z
 DTSTART:20261111T090000Z
 DTEND:20261202T035900Z
-SUMMARY:FGO | 「严冬泳装特辑 唠唠叨叨软软弹弹战争！ ～史上最差劲的炸弹娘～」参加条件通关应援纪念活动
-DESCRIPTION:Type: Campaign\nNews: https://news.fate-go.jp/2026/11/2026gudaguda_assist_participation_cp/\nSrc: fgo.wiki Mooncell
+SUMMARY:FGO | GUDAGUDA Winter Swimsuit - Clear-to-Join Support Campaign
+DESCRIPTION:Type: Campaign\nSupport campaign for players who clear the event's participation condition.\nOfficial news: https://news.fate-go.jp/2026/11/2026gudaguda_assist_participation_cp/\nSource: fgo.wiki (Mooncell)
 CATEGORIES:FGO
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -30,8 +30,8 @@ UID:fgo-8a79df02c2@lumia.local
 DTSTAMP:20261117T195409Z
 DTSTART:20261104T090000Z
 DTEND:20261118T035900Z
-SUMMARY:FGO | 「严冬泳装特辑 唠唠叨叨软软弹弹战争！ ～史上最差劲的炸弹娘～」开幕前夕纪念活动
-DESCRIPTION:Type: Campaign\nNews: https://news.fate-go.jp/2026/11/2026gudaguda_cp/\nSrc: fgo.wiki Mooncell
+SUMMARY:FGO | GUDAGUDA Winter Swimsuit - Pre-Open Campaign
+DESCRIPTION:Type: Campaign\nPre-open celebration before the GUDAGUDA winter swimsuit event.\nOfficial news: https://news.fate-go.jp/2026/11/2026gudaguda_cp/\nSource: fgo.wiki (Mooncell)
 CATEGORIES:FGO
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -40,8 +40,8 @@ UID:fgo-8a76af49af@lumia.local
 DTSTAMP:20261117T195409Z
 DTSTART:20261007T090000Z
 DTEND:20261023T035900Z
-SUMMARY:FGO | 「冠位名代战」准备应援纪念活动
-DESCRIPTION:Type: Campaign\nNews: https://news.fate-go.jp/2026/10/grand_substitute_cp/\nSrc: fgo.wiki Mooncell
+SUMMARY:FGO | Grand Substitute Battle - Prep Campaign
+DESCRIPTION:Type: Campaign\nPreparation support campaign for the Grand Substitute Battle.\nOfficial news: https://news.fate-go.jp/2026/10/grand_substitute_cp/\nSource: fgo.wiki (Mooncell)
 CATEGORIES:FGO
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -50,8 +50,8 @@ UID:fgo-a078c0d073@lumia.local
 DTSTAMP:20261117T195409Z
 DTSTART:20261029T090000Z
 DTEND:20261111T035900Z
-SUMMARY:FGO | 「冠位戴冠战：Rider」＆「冠位戴冠战：Caster」＆「冠位戴冠战：Assassin」风暴罐消耗0！纪念活动
-DESCRIPTION:Type: Campaign\nNews: https://news.fate-go.jp/2026/10/2026_grand_rider_caster_assassin/\nSrc: fgo.wiki Mooncell
+SUMMARY:FGO | Grand Crown Battle Rider/Caster/Assassin - Storm Pod Cost 0
+DESCRIPTION:Type: Campaign\nStorm Pod consumption reduced to 0 for the three Grand Crown Battles during the period.\nOfficial news: https://news.fate-go.jp/2026/10/2026_grand_rider_caster_assassin/\nSource: fgo.wiki (Mooncell)
 CATEGORIES:FGO
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -60,8 +60,8 @@ UID:fgo-5a4540edcc@lumia.local
 DTSTAMP:20261117T195409Z
 DTSTART:20261018T150000Z
 DTEND:20261019T145900Z
-SUMMARY:FGO | 上线4100日纪念活动
-DESCRIPTION:Type: Campaign\nNews: https://news.fate-go.jp/2026/10/4100days/\nSrc: fgo.wiki Mooncell
+SUMMARY:FGO | 4100 Days Since Launch Campaign
+DESCRIPTION:Type: Campaign\nMilestone campaign for 4100 days of service.\nOfficial news: https://news.fate-go.jp/2026/10/4100days/\nSource: fgo.wiki (Mooncell)
 CATEGORIES:FGO
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -70,8 +70,8 @@ UID:fgo-a7ec8cd176@lumia.local
 DTSTAMP:20261117T195409Z
 DTSTART:20261111T110000Z
 DTEND:20261202T035900Z
-SUMMARY:FGO | 严冬泳装特辑 唠唠叨叨软软弹弹战争！ ～史上最差劲的炸弹娘～
-DESCRIPTION:Type: Event\nNews: https://news.fate-go.jp/2026/10/2026gudaguda/\nSrc: fgo.wiki Mooncell
+SUMMARY:FGO | GUDAGUDA Winter Swimsuit: Pudding Pudding Wars! ~The Worst Bombshell~
+DESCRIPTION:Type: Event\nMain event, runs through Dec 2.\nOfficial news: https://news.fate-go.jp/2026/10/2026gudaguda/\nSource: fgo.wiki (Mooncell)
 CATEGORIES:FGO
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -80,8 +80,8 @@ UID:fgo-a7737d0914@lumia.local
 DTSTAMP:20261117T195409Z
 DTSTART:20261107T120000Z
 DTEND:20261121T035900Z
-SUMMARY:FGO | 全世界1亿下载突破纪念活动
-DESCRIPTION:Type: Campaign\nNews: https://news.fate-go.jp/2026/10/100mdl/\nSrc: fgo.wiki Mooncell
+SUMMARY:FGO | 100 Million Downloads Worldwide Campaign
+DESCRIPTION:Type: Campaign\nGlobal download milestone celebration.\nOfficial news: https://news.fate-go.jp/2026/10/100mdl/\nSource: fgo.wiki (Mooncell)
 CATEGORIES:FGO
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -90,8 +90,8 @@ UID:fgo-e982ecf516@lumia.local
 DTSTAMP:20261117T195409Z
 DTSTART:20261023T090000Z
 DTEND:20261030T035900Z
-SUMMARY:FGO | 冠位名代战：玉藻艾莉亚
-DESCRIPTION:Type: Other\nNews: https://news.fate-go.jp/2026/10/grand_substitute/\nSrc: fgo.wiki Mooncell
+SUMMARY:FGO | Grand Substitute Battle: Tamamo Aria
+DESCRIPTION:Type: Battle\nSpecial Grand Substitute Battle featuring Tamamo Aria.\nOfficial news: https://news.fate-go.jp/2026/10/grand_substitute/\nSource: fgo.wiki (Mooncell)
 CATEGORIES:FGO
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -100,8 +100,8 @@ UID:fgo-306e917652@lumia.local
 DTSTAMP:20261117T195409Z
 DTSTART:20261014T090000Z
 DTEND:20261104T035900Z
-SUMMARY:FGO | 复刻版：盈月剑风帖
-DESCRIPTION:Type: Event\nNews: https://news.fate-go.jp/2026/10/re_sr_collaboration/\nSrc: fgo.wiki Mooncell
+SUMMARY:FGO | Re-Run: Blade Wind Record of the Waxing Moon
+DESCRIPTION:Type: Event\nRe-run of the collaboration event.\nOfficial news: https://news.fate-go.jp/2026/10/re_sr_collaboration/\nSource: fgo.wiki (Mooncell)
 CATEGORIES:FGO
 TRANSP:TRANSPARENT
 END:VEVENT
