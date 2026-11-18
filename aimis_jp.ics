@@ -6,17 +6,6 @@ METHOD:PUBLISH
 X-WR-CALNAME:あいミス（日服）— 活动
 X-WR-TIMEZONE:Asia/Tokyo
 BEGIN:VEVENT
-UID:483d91bbca@lumia.local
-DTSTAMP:20261031T000000Z
-DTSTART:20261031T030000Z
-DTEND:20261113T035900Z
-SUMMARY:あいミス | [召喚] 期間限定『飴細工は恋の味召喚
- 』開催！
-DESCRIPTION:https://dmm-imys.com/news/gacha261031/
-URL:https://dmm-imys.com/news/gacha261031/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:6b122fc0c5@lumia.local
 DTSTAMP:20261031T000000Z
 DTSTART:20261031T030000Z
@@ -25,6 +14,17 @@ SUMMARY:あいミス | [イベント] イベント『飴細工は恋の味
  』開催！
 DESCRIPTION:https://dmm-imys.com/news/event261031/
 URL:https://dmm-imys.com/news/event261031/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:36163808da@lumia.local
+DTSTAMP:20261107T000000Z
+DTSTART:20261107T030000Z
+DTEND:20261120T035900Z
+SUMMARY:あいミス | [イベント] イベント『名探偵見参！』
+ 開催！！
+DESCRIPTION:https://dmm-imys.com/news/event261107/
+URL:https://dmm-imys.com/news/event261107/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -40,28 +40,6 @@ URL:https://dmm-imys.com/news/gacha261107_2/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:1df3f0ed45@lumia.local
-DTSTAMP:20261107T000000Z
-DTSTART:20261107T030000Z
-DTEND:20261120T035900Z
-SUMMARY:あいミス | [召喚] 期間限定『名探偵見参！召喚』
- 開催！！
-DESCRIPTION:https://dmm-imys.com/news/gacha261107/
-URL:https://dmm-imys.com/news/gacha261107/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:36163808da@lumia.local
-DTSTAMP:20261107T000000Z
-DTSTART:20261107T030000Z
-DTEND:20261120T035900Z
-SUMMARY:あいミス | [イベント] イベント『名探偵見参！』
- 開催！！
-DESCRIPTION:https://dmm-imys.com/news/event261107/
-URL:https://dmm-imys.com/news/event261107/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:7f3bf3de93@lumia.local
 DTSTAMP:20261111T000000Z
 DTSTART:20261110T150000Z
@@ -73,61 +51,6 @@ URL:https://dmm-imys.com/news/gacha261111/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:7564fe6b5a@lumia.local
-DTSTAMP:20261111T000000Z
-DTSTART;VALUE=DATE:20261111
-DTEND;VALUE=DATE:20261112
-SUMMARY:あいミス | [ニュース] 『練磨クエスト』追加のお
- 知らせ
-DESCRIPTION:https://dmm-imys.com/news/update261111/
-URL:https://dmm-imys.com/news/update261111/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:3e590f0d04@lumia.local
-DTSTAMP:20261111T000000Z
-DTSTART;VALUE=DATE:20261111
-DTEND;VALUE=DATE:20261112
-SUMMARY:あいミス | [ニュース] 冥界銭ショップに特別な家
- 具を追加！
-DESCRIPTION:https://dmm-imys.com/news/shop261111/
-URL:https://dmm-imys.com/news/shop261111/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2ff748d74d@lumia.local
-DTSTAMP:20261111T000000Z
-DTSTART;VALUE=DATE:20261111
-DTEND;VALUE=DATE:20261112
-SUMMARY:あいミス | [ニュース] コトお誕生日クエスト開催
- ！
-DESCRIPTION:https://dmm-imys.com/news/birthday261111/
-URL:https://dmm-imys.com/news/birthday261111/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:8cba434c47@lumia.local
-DTSTAMP:20261112T000000Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:あいミス | [ニュース] DMM GAMES FESTIVALプレゼント配
- 布のお知らせ
-DESCRIPTION:https://dmm-imys.com/news/dmmgamesfestival261112/
-URL:https://dmm-imys.com/news/dmmgamesfestival261112/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:76d5351183@lumia.local
-DTSTAMP:20261113T000000Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
-SUMMARY:あいミス | [イベント] イベント『飴細工は恋の味
- 』終了！
-DESCRIPTION:https://dmm-imys.com/news/eventend261113/
-URL:https://dmm-imys.com/news/eventend261113/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:390bf045ad@lumia.local
 DTSTAMP:20261114T000000Z
 DTSTART:20261114T080000Z
@@ -136,39 +59,6 @@ SUMMARY:あいミス | [召喚] 期間限定『秘跡・深憶聖装ステ
  ップアップセレクト召喚』開催！！
 DESCRIPTION:https://dmm-imys.com/news/gacha261114/
 URL:https://dmm-imys.com/news/gacha261114/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:803df79b6f@lumia.local
-DTSTAMP:20261114T000000Z
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261115
-SUMMARY:あいミス | [ニュース] 聖獣洞窟11月シーズンの「
- 陰窟」にて「聖骸の穢詛」ランダムモード開催！
-DESCRIPTION:https://dmm-imys.com/news/update261114/
-URL:https://dmm-imys.com/news/update261114/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:b373e21f58@lumia.local
-DTSTAMP:20261116T000000Z
-DTSTART;VALUE=DATE:20261116
-DTEND;VALUE=DATE:20261117
-SUMMARY:あいミス | [ニュース] 【予告】イベント『異文化
- の風を感じよう』開催！！
-DESCRIPTION:https://dmm-imys.com/news/event261116/
-URL:https://dmm-imys.com/news/event261116/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:6c0e56d834@lumia.local
-DTSTAMP:20261118T000000Z
-DTSTART:20261118T030000Z
-DTEND:20261129T035900Z
-SUMMARY:あいミス | [召喚] 期間限定『異文化の風を感じよ
- う召喚』開催！！
-DESCRIPTION:https://dmm-imys.com/news/gacha261118/
-URL:https://dmm-imys.com/news/gacha261118/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
