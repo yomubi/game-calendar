@@ -1,0 +1,31 @@
+name: update monmusu calendar
+
+on:
+  schedule:
+    - cron: "0 3 */3 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch events
+        run: python scripts/fetch_monmusu.py --out monmusu_jp.ics
+      - name: Commit if changed
+        run: |
+          git config user.name "calendar-bot"
+          git config user.email "bot@lumia.local"
+          if [[ -n "$(git status --porcelain monmusu_jp.ics)" ]]; then
+            git add monmusu_jp.ics
+            git commit -m "chore: refresh monmusu_jp.ics"
+            git push
+          else
+            echo "no change"
+          fi
