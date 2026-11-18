@@ -205,7 +205,8 @@ def main():
             continue          # 早就结束了，别塞进日历
         uid = sha1(r["link"].encode("utf-8")).hexdigest()[:10] + "@lumia.local"
         summary = "あいミス | [" + r["cat"] + "] " + r["title"]
-        ev = ["BEGIN:VEVENT", "UID:" + uid, "DTSTAMP:" + now]
+        ev = ["BEGIN:VEVENT", "UID:" + uid,
+              "DTSTAMP:" + d.strftime("%Y%m%dT000000Z")]
         if span:
             exact += 1
             s, e = span
