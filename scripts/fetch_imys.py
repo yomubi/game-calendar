@@ -46,8 +46,17 @@ PERIOD = re.compile(
 def get(url):
     req = urllib.request.Request(url, headers={
         "User-Agent": UA,
-        "Accept": "text/html,application/xhtml+xml,*/*;q=0.8",
-        "Accept-Language": "ja,en;q=0.8",
+        "Accept": ("text/html,application/xhtml+xml,application/xml;q=0.9,"
+                   "image/avif,image/webp,*/*;q=0.8"),
+        "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
+        "Accept-Encoding": "identity",
+        "Referer": "https://dmm-imys.com/",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "same-origin",
+        "Cache-Control": "no-cache",
     })
     with urllib.request.urlopen(req, timeout=45) as r:
         return r.read().decode("utf-8", "replace")
@@ -65,10 +74,11 @@ def page_url(n):
 
 
 def collect(pages):
-    rows, seen = [], set()
+    rows, seen, ok = [], set(), 0
     for n in range(1, pages + 1):
         try:
             html = get(page_url(n))
+            ok += 1
         except Exception as e:
             print("page %d failed: %s" % (n, e), file=sys.stderr)
             continue
@@ -85,6 +95,14 @@ def collect(pages):
                 "cat": m.group("cat").strip(),
                 "date": m.group("date").strip(),
             })
+    if ok == 0:
+        print("ALL pages failed - site unreachable, refusing to overwrite",
+              file=sys.stderr)
+        sys.exit(3)
+    if not rows:
+        print("no articles parsed - layout may have changed, refusing to overwrite",
+              file=sys.stderr)
+        sys.exit(4)
     return rows
 
 
