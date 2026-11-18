@@ -23,6 +23,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
+from urllib.parse import quote
 from hashlib import sha1
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -30,6 +31,9 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 JST = timezone(timedelta(hours=9))
 BASE = "https://dmm-imys.com"
 FEED = BASE + "/news/feed/"
+# 站点对中国大陆/海外机房的 CloudFront 封锁很死，runner 直接抓会被 403。
+# 给了 --base 就改走自建反代（Vercel 东京函数），路径变成 /api/feed。
+PROXY_ROOT = None
 CONTENT_NS = "{http://purl.org/rss/1.0/modules/content/}encoded"
 
 WANT = {"イベント", "召喚"}
@@ -105,10 +109,17 @@ def guess_cat(title):
 
 # ---------------------------------------------------------------- RSS 取数
 
+def feed_url(n):
+    q = "" if n <= 1 else "?paged=%d" % n
+    if PROXY_ROOT:
+        return PROXY_ROOT + "/api/feed" + q
+    return FEED + q
+
+
 def rss_collect(pages):
     rows, seen, ok = [], set(), 0
     for n in range(1, pages + 1):
-        url = FEED if n == 1 else "%s?paged=%d" % (FEED, n)
+        url = feed_url(n)
         try:
             raw = get(url)
             ok += 1
@@ -220,14 +231,25 @@ def period_from_text(text, pub_date):
     return start, end
 
 
+def page_via_proxy(link):
+    """把官网文章 URL 换成反代地址：/api/feed?path=/news/xxx/"""
+    m = re.search(r'(/news/[A-Za-z0-9][A-Za-z0-9\-]*/)$', link)
+    if not m:
+        return None
+    return PROXY_ROOT + "/api/feed?path=" + quote(m.group(1), safe="/")
+
+
 def find_period(row, pub_date):
     """优先用 RSS 正文，没有再进详情页。"""
     if row.get("body"):
         span = period_from_text(row["body"], pub_date)
         if span:
             return span
+    url = page_via_proxy(row["link"]) if PROXY_ROOT else row["link"]
+    if not url:
+        return None
     try:
-        html = get(row["link"])
+        html = get(url)
     except Exception as e:
         print("  detail failed %s: %s" % (row["link"], e), file=sys.stderr)
         return None
@@ -272,7 +294,17 @@ def main():
                     help="不抓详情页（无正文的条目退化为全天事件）")
     ap.add_argument("--grace", type=int, default=7,
                     help="已结束的事件再保留几天（默认 7）")
+    ap.add_argument("--base", default=None,
+                    help="反代根地址，如 https://xxx.vercel.app；给了就走它抓 feed")
     a = ap.parse_args()
+
+    global PROXY_ROOT
+    if a.base:
+        b = a.base.rstrip("/")
+        if b and "dmm-imys.com" not in b:
+            PROXY_ROOT = b
+            # 详情页也走反代（/api/feed?path=/news/xxx/），能拿到精确期间
+            print("using proxy: %s" % b, file=sys.stderr)
 
     rows = rss_collect(a.pages) if a.source == "rss" else html_collect(a.pages)
 
