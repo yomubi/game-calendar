@@ -6,17 +6,6 @@ METHOD:PUBLISH
 X-WR-CALNAME:あいミス（日服）— 活动
 X-WR-TIMEZONE:Asia/Tokyo
 BEGIN:VEVENT
-UID:6b122fc0c5@lumia.local
-DTSTAMP:20261031T000000Z
-DTSTART:20261031T030000Z
-DTEND:20261113T035900Z
-SUMMARY:あいミス | [イベント] イベント『飴細工は恋の味
- 』開催！
-DESCRIPTION:https://dmm-imys.com/news/event261031/
-URL:https://dmm-imys.com/news/event261031/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:36163808da@lumia.local
 DTSTAMP:20261107T000000Z
 DTSTART:20261107T030000Z
@@ -25,18 +14,6 @@ SUMMARY:あいミス | [イベント] イベント『名探偵見参！』
  開催！！
 DESCRIPTION:https://dmm-imys.com/news/event261107/
 URL:https://dmm-imys.com/news/event261107/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:3b3d08cd65@lumia.local
-DTSTAMP:20261107T000000Z
-DTSTART:20261107T080000Z
-DTEND:20261114T145900Z
-SUMMARY:あいミス | [召喚] 期間限定『有償限定秘跡/深憶
- 確定秘跡・深憶聖装ステップアップセレクト召喚』開
- 催！！
-DESCRIPTION:https://dmm-imys.com/news/gacha261107_2/
-URL:https://dmm-imys.com/news/gacha261107_2/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
